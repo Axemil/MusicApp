@@ -1,0 +1,8 @@
+.header{
+    & h1{
+        color: white;
+        &:hover{
+            text-decoration: none!important;
+        }
+    }
+}

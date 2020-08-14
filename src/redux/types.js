@@ -1,0 +1,11 @@
+export const API_KEY = '0c58e57c814676a52833600d5d68bc35'
+export const CREATE_POST = 'CREATE_POST'
+export const GET_MUSIC = 'GET_MUSIC'
+export const GET_ARTIST = 'GET_ARTIST'
+export const GET_SEARCH_MUSIC = 'GET_SEARCH_MUSIC'
+export const SHOW_LOADER = 'SHOW_LOADER'
+export const HIDE_LOADER = 'HIDE_LOADER'
+export const SUCCESS_ALEART = 'SUCCESS_ALEART'
+export const ERROR_ALEART = 'ERROR_ALEART'
+export const HIDE_ALEART = 'HIDE_ALEART'
+

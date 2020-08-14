@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Artist from './components/Artist'
+import NotFound from './components/NotFound'
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Container className="p-3">
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/search/:text" component={Main} />
+          <Route exact path="/search/:text" component={Main} />
+          <Route exact path="/artist/:artist" component={Artist} />
+          <Route exact path="/search/artist/:artist" component={Artist} />
+          <Route component={NotFound} />
+        </Switch>
+      </Container>
     </div>
   );
 }
